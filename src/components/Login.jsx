@@ -92,10 +92,9 @@ const Login = () => {
                         <path d="M178.077 25V7.54544H181.239V14.9346H189.327V7.54544H192.497V25H189.327V17.5852H181.239V25H178.077ZM200.891 25H194.976V7.54544H201.01C202.743 7.54544 204.232 7.89487 205.476 8.59374C206.726 9.28692 207.686 10.2841 208.357 11.5852C209.027 12.8864 209.362 14.4432 209.362 16.2557C209.362 18.0739 209.024 19.6364 208.348 20.9432C207.678 22.25 206.709 23.2528 205.442 23.9517C204.181 24.6506 202.663 25 200.891 25ZM198.138 22.2642H200.737C201.953 22.2642 202.967 22.0426 203.78 21.5994C204.592 21.1506 205.203 20.4829 205.612 19.5966C206.021 18.7045 206.226 17.5909 206.226 16.2557C206.226 14.9204 206.021 13.8125 205.612 12.9318C205.203 12.0454 204.598 11.3835 203.797 10.946C203.002 10.5028 202.013 10.2812 200.831 10.2812H198.138V22.2642Z" fill="#232323" />
                     </svg>
                 </div>
-
                 {/* Form */}
-                <div className="flex-1 flex  justify-center mt-20">
-                    <div className="w-full max-w-xl flex flex-col items-center">
+                <div className="flex-1 flex  justify-center md:mt-20">
+                    <div className="w-full flex flex-col items-center">
                         <h2 className="text-3xl font-bold mb-2">Sign in</h2>
                         <p className="text-gray-500 mb-6">
                             Please login to continue to your account
@@ -118,7 +117,7 @@ const Login = () => {
                                         type="email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 pr-30 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         required
                                         disabled={otpSent}
                                     />

@@ -97,7 +97,7 @@ const Register = () => {
     return (
         <div className="min-h-screen flex flex-col md:flex-row bg-white">
             {/* Left Section */}
-            <div className="flex-1 flex flex-col h-screen p-6 md:p-12 mt-16 md:mt-0">
+            <div className="flex-1 flex flex-col h-screen p- md:p-12 mt-16 md:mt-0">
                 {/* Logo */}
                 <div className="flex justify-center md:justify-start mb-8">
                     <svg width="343" height="32" viewBox="0 0 343 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -112,7 +112,7 @@ const Register = () => {
                 </div>
 
                 {/* Form */}
-                <div className="flex-1 flex justify-center mt-20">
+                <div className="flex-1 flex justify-center  md:mt-20 ">
                     <div className="w-full max-w-sm flex flex-col items-center">
                         <h2 className="text-3xl font-bold mb-2">Sign up</h2>
                         <p className="text-gray-500 mb-6">
@@ -137,7 +137,7 @@ const Register = () => {
                                 <input
                                     type="text"
                                     name="name"
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={form.name}
                                     onChange={handleChange}
                                     required
@@ -153,7 +153,7 @@ const Register = () => {
                                 <input
                                     type="date"
                                     name="dob"
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={form.dob}
                                     onChange={handleChange}
                                     required
@@ -169,7 +169,7 @@ const Register = () => {
                                 <input
                                     type="email"
                                     name="email"
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full px-4 pr-30 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={form.email}
                                     onChange={handleChange}
                                     required
