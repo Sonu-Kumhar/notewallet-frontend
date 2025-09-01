@@ -117,7 +117,7 @@ const Login = () => {
                                         type="email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="w-full px-4 pr-30 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        className="w-full px-4 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                         required
                                         disabled={otpSent}
                                     />
