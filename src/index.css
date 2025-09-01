@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+
+.btn {
+  @apply px-4 py-2 rounded-lg font-medium text-white
+         transition-all duration-150 shadow-md;
+}
+
+/* Pressed effect */
+.btn:active {
+  transform: scale(0.95);
+}
