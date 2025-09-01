@@ -129,41 +129,54 @@ const Register = () => {
                             onSubmit={otpSent ? handleVerifyOTP : handleSendOtp}
                             className="space-y-4"
                         >
-                            {/* Name */}
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Your Name"
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                value={form.name}
-                                onChange={handleChange}
-                                required
-                                disabled={otpSent}
-                            />
+                            <div className="relative w-full">
+                                {/* Name */}
+                                <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-500">
+                                    Your Name
+                                </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    value={form.name}
+                                    onChange={handleChange}
+                                    required
+                                    disabled={otpSent}
+                                />
+                            </div>
 
-                            {/* DOB */}
-                            <input
-                                type="date"
-                                name="dob"
-                                placeholder="Date of Birth"
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                value={form.dob}
-                                onChange={handleChange}
-                                required
-                                disabled={otpSent}
-                            />
+                            <div className="relative w-full mt-4">
+                                {/* DOB */}
+                                <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-500">
+                                    Date of Birth
+                                </label>
+                                <input
+                                    type="date"
+                                    name="dob"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    value={form.dob}
+                                    onChange={handleChange}
+                                    required
+                                    disabled={otpSent}
+                                />
+                            </div>
 
-                            {/* Email */}
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                value={form.email}
-                                onChange={handleChange}
-                                required
-                                disabled={otpSent}
-                            />
+                            <div className="relative w-full mt-4">
+                                {/* Email */}
+                                <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-500">
+                                    Email
+                                </label>
+                                <input
+                                    type="email"
+                                    name="email"
+                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    value={form.email}
+                                    onChange={handleChange}
+                                    required
+                                    disabled={otpSent}
+                                />
+                            </div>
+
 
                             {/* OTP Field */}
                             {/* OTP Field */}

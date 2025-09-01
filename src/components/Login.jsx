@@ -95,7 +95,7 @@ const Login = () => {
 
                 {/* Form */}
                 <div className="flex-1 flex  justify-center mt-20">
-                    <div className="w-full max-w-sm flex flex-col items-center">
+                    <div className="w-full max-w-xl flex flex-col items-center">
                         <h2 className="text-3xl font-bold mb-2">Sign in</h2>
                         <p className="text-gray-500 mb-6">
                             Please login to continue to your account
@@ -110,15 +110,20 @@ const Login = () => {
                         {!loginVerified && (
                             <div className="space-y-4">
                                 {/* Email Input */}
-                                <input
-                                    type="email"
-                                    placeholder="Enter your Gmail"
-                                    value={email}
-                                    onChange={(e) => setEmail(e.target.value)}
-                                    className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                                    required
-                                    disabled={otpSent}
-                                />
+                                <div className="relative w-full">
+                                    <label className="absolute -top-2 left-3 bg-white px-1 text-sm text-gray-500">
+                                        Email
+                                    </label>
+                                    <input
+                                        type="email"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                        required
+                                        disabled={otpSent}
+                                    />
+                                </div>
+
 
                                 {/* OTP Input */}
                                 {otpSent && (
