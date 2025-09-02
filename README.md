@@ -1,12 +1,72 @@
-# React + Vite
+# NoteWallet Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+NoteWallet is a simple and secure note management application built with React (Vite) for the frontend and a Node.js/Express backend.  
+This repository contains the **frontend** code of the project.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- User registration and login with OTP verification.
+- Secure note creation, editing, and deletion.
+- Responsive and clean UI with modern styling.
+- Toast notifications for success and error messages.
+- Routing support for SPA deployment.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React (Vite)** – frontend framework
+- **React Router** – client-side routing
+- **Axios** – API calls
+- **React Toastify** – toast notifications
+- **Tailwind CSS** (if you added styling with it)
+
+---
+
+## 📂 Project Structure
+frontend/
+│── public/ # Static assets
+│── src/ # Source code
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Page-level components
+│ ├── App.jsx # Main app entry
+│ ├── main.jsx # ReactDOM entry
+│── package.json # Dependencies and scripts
+│── vite.config.js # Vite configuration
+│── index.html # HTML template
+
+
+---
+
+## ⚡ Getting Started
+
+1️⃣ Clone the repository
+git clone https://github.com/<your-username>/NoteWallet-frontend.git
+cd NoteWallet-frontend
+
+2️⃣ Install dependencies
+npm install
+
+3️⃣ Run the development server
+npm run dev
+
+4️⃣ Build for production
+npm run build
+
+🔗 Backend Repository
+
+The backend of this project is available here: NoteWallet Backend
+
+📌 Deployment Notes
+
+If hosting on Render / Vercel / Netlify, ensure:
+
+SPA fallback is enabled (redirect all routes to /index.html).
+
+Correct backend API URL is set in your .env or config file.
+✨ Author
+
+Developed by Sonu Kumhar as part of an Internshala Assignment Project.
+
+
+Do you also want me to prepare a **backend README.md** in the same style so you can submit both together?
