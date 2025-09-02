@@ -41,7 +41,7 @@ frontend/
 ## ⚡ Getting Started
 
 1️⃣ Clone the repository
-git clone https://github.com/<your-username>/NoteWallet-frontend.git
+git clone https://github.com/Sonu-Kumhar/notewallet-frontend.git
 cd NoteWallet-frontend
 
 2️⃣ Install dependencies
@@ -53,7 +53,7 @@ npm run dev
 4️⃣ Build for production
 npm run build
 
-🔗 Backend Repository
+🔗 Backend Repository : https://github.com/Sonu-Kumhar/notewallet-backend
 
 The backend of this project is available here: NoteWallet Backend
 
