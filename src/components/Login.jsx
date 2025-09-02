@@ -42,7 +42,9 @@ const Login = () => {
             setTimer(30); // 30s timer for resend
             toast.success("OTP sent to your email!");
         } catch (err) {
-            setError(err.response?.data?.message || "Failed to send OTP");
+            const msg = err.response?.data?.message || "Failed to send OTP";
+            toast.error(msg);
+            // setError(err.response?.data?.message || "Failed to send OTP");
         }
     };
 
@@ -72,7 +74,9 @@ const Login = () => {
             toast.success("Login successful!");
             setTimeout(() => navigate("/dashboard"), 1500);
         } catch (err) {
-            setError(err.response?.data?.message || "Invalid OTP");
+            const msg = err.response?.data?.message || "Invalid OTP";
+            toast.error(msg);
+            // setError(err.response?.data?.message || "Invalid OTP");
         }
     };
 

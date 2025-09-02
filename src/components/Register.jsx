@@ -32,7 +32,7 @@ const Register = () => {
 
         // check if future date
         if (birthDate > today) {
-            setError("Invalid Date of Birth. Please enter a valid past date.");
+            toast.error("Invalid Date of Birth. Please enter a valid past date.");
             return;
         }
 
@@ -47,7 +47,7 @@ const Register = () => {
         }
 
         if (exactAge < 10) {
-            setError("You must be at least 10 years old to register.");
+            toast.error("You must be at least 10 years old to register.");
             return;
         }
 
@@ -169,7 +169,7 @@ const Register = () => {
                                 <input
                                     type="email"
                                     name="email"
-                                    className="w-full px-4 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    className="w-full  px-4 py-2 my-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
                                     value={form.email}
                                     onChange={handleChange}
                                     required
